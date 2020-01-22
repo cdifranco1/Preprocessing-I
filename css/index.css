@@ -1,1 +1,268 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 62.5%;
+  font: inherit;
+  vertical-align: baseline;
+  list-style: none;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
+}
+body {
+  margin: 2% 4%;
+  font-family: 'Roboto', sans-serif;
+}
+header {
+  display: flex;
+  justify-content: flex-end;
+}
+header nav {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+header nav a {
+  text-decoration: none;
+  color: #D3D3D3;
+}
+header nav a:hover {
+  color: #2F4F4F;
+}
+.top-section {
+  display: flex;
+  flex-direction: column;
+  background-color: #F5F5F5;
+  padding: 3%;
+  margin-top: 2%;
+}
+.top-section .name {
+  border-bottom: 1px solid black;
+  padding: 3%;
+}
+.top-section .name h1 {
+  font-size: 3rem;
+}
+.top-section .name .caption {
+  font-size: 1.5rem;
+}
+.top-section .name .headshot {
+  width: 30%;
+}
+.top-section .name .headshot img {
+  width: 100%;
+  height: auto;
+}
+.cta {
+  padding: 3%;
+}
+.cta button {
+  padding: 1%;
+  border-radius: 5px;
+  margin-top: 2%;
+  width: 20%;
+  background-color: #808080;
+  color: white;
+  font-size: 1.25rem;
+}
+.cta button:hover {
+  background-color: #2F4F4F;
+}
+.middle-section {
+  display: flex;
+  justify-content: space-between;
+  margin: 2% 0;
+}
+.middle-section .intro {
+  width: 55%;
+}
+.middle-section .intro h2 {
+  font-size: 2rem;
+  padding: 2% 0;
+}
+.middle-section .intro p {
+  line-height: 1.5rem;
+  padding: 2% 0;
+}
+.middle-section .skills {
+  width: 40%;
+}
+.middle-section .skills h2 {
+  font-size: 1.5rem;
+  background-color: #808080;
+  margin-bottom: 2%;
+  color: white;
+  padding: 3%;
+}
+.middle-section .skills li {
+  border: 1px solid lightgrey;
+  padding: 3%;
+  width: 100%;
+}
+.bottom-section h2 {
+  font-size: 2rem;
+  padding: 2% 0;
+}
+.bottom-section .work-history {
+  display: flex;
+  flex-direction: column;
+}
+.bottom-section .work-history .top-row {
+  font-weight: bold;
+  border-top: 2px solid darkgrey;
+  border-bottom: 2px solid darkgrey;
+  font-size: 1.25rem;
+}
+.bottom-section .work-history ul {
+  display: flex;
+  padding: 3%;
+}
+.bottom-section .work-history ul:nth-child(2),
+.bottom-section .work-history ul:nth-child(4) {
+  background-color: lightgrey;
+}
+.bottom-section .work-history ul li:first-child {
+  width: 25%;
+}
+.bottom-section .work-history ul li:nth-child(2) {
+  width: 25%;
+}
+.bottom-section .work-history ul li:nth-child(3) {
+  width: 25%;
+}
+.bottom-section .work-history ul li:nth-child(4) {
+  width: 25%;
+}

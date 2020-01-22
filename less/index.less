@@ -20,9 +20,10 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
+	font-size: 62.5%;
 	font: inherit;
 	vertical-align: baseline;
+	list-style: none;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -50,10 +51,194 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 html, body {
     height: 100%;
 }
+
+
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+//Variables
+
+@main-font: 'Roboto', sans-serif;
+@main-padding: 3%;
+
+body {
+	margin: 2% 4%;
+	font-family: @main-font
+}
+
+//Mixins
+
+.flexbox() {
+	display: flex;
+}
+
+.space-between(){
+	justify-content: space-between;
+}
+
+
+
+header {
+	.flexbox();
+	justify-content: flex-end;
+
+	nav{
+		width: 50%;
+		.flexbox();
+		.space-between();
+
+		a {
+			text-decoration: none;
+			color: #D3D3D3;
+
+			&:hover{
+				color: #2F4F4F;
+			}
+		}
+	};
+}
+
+.top-section {
+	display: flex;
+	flex-direction: column;
+	background-color: #F5F5F5;
+	padding: @main-padding;
+	margin-top: 2%;
+
+	.name {
+		border-bottom: 1px solid black;
+		padding: @main-padding;
+
+		h1 {
+			font-size: 3rem;
+		}
+
+		.caption {
+			font-size: 1.5rem;
+		}
+	
+		.headshot {
+			width: 30%;
+
+			img {
+				width: 100%;
+				height: auto;
+			} //closes img div
+		} //closes headshot div
+	} //closes name div
+}//closes top-section div
+
+
+.cta {
+	padding: @main-padding;
+
+	button {
+		padding: 1%;
+		border-radius: 5px;
+		margin-top: 2%;
+		width: 20%;
+		background-color: #808080;
+		color: white;
+		font-size: 1.25rem;
+
+		&:hover{
+			background-color: #2F4F4F;
+		}
+	}
+}
+
+.middle-section {
+	.flexbox();
+	.space-between();
+	margin: 2% 0;
+	
+	.intro {
+		width: 55%;
+
+		h2 {
+			font-size: 2rem;
+			padding: 2% 0;
+		}
+
+		p {
+			line-height: 1.5rem;
+			padding: 2% 0;
+		}
+	}
+
+	.skills {
+		width: 40%;
+
+		h2 {
+			font-size: 1.5rem;
+			background-color: #808080;
+			margin-bottom: 2%;
+			color: white;
+			padding: @main-padding;
+		}
+
+		li {
+			border: 1px solid lightgrey;
+			padding: @main-padding;
+			width: 100%;
+		}
+	}
+}
+
+
+.bottom-section {
+	h2 {
+		font-size: 2rem;
+		padding: 2% 0;
+	}
+
+	.work-history{
+
+		.flexbox();
+		flex-direction: column;
+
+		.top-row {
+			font-weight: bold;
+			border-top: 2px solid darkgrey;
+			border-bottom: 2px solid darkgrey;
+			font-size: 1.25rem;
+		}
+
+		ul {
+			.flexbox();
+			padding: @main-padding;
+			&:nth-child(2), 
+			&:nth-child(4){
+				background-color: lightgrey;
+			}
+
+			li {
+				&:first-child{
+					width: 25%;
+				}
+
+				&:nth-child(2){
+					width: 25%;
+				}
+
+				&:nth-child(3){
+					width: 25%;
+				}
+
+				&:nth-child(4){
+					width: 25%;
+				}
+			}
+		}
+	}
+
+
+}
+
+
 
