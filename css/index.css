@@ -232,6 +232,17 @@ header nav a:hover {
   padding: 3%;
   width: 100%;
 }
+@media (max-width: 500px) {
+  .middle-section {
+    flex-direction: column;
+  }
+  .middle-section .intro {
+    width: 100%;
+  }
+  .middle-section .skills {
+    width: 100%;
+  }
+}
 .bottom-section h2 {
   font-size: 2rem;
   padding: 2% 0;
