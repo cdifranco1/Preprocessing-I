@@ -64,6 +64,7 @@ html, body {
 //Variables
 
 @main-font: 'Roboto', sans-serif;
+@background-color: #DCDCDC;
 @main-padding: 3%;
 
 body {
@@ -106,7 +107,7 @@ header {
 .top-section {
 	display: flex;
 	flex-direction: column;
-	background-color: #F5F5F5;
+	background-color: @background-color;
 	padding: @main-padding;
 	margin-top: 2%;
 
@@ -214,10 +215,11 @@ header {
 			padding: @main-padding;
 			&:nth-child(2), 
 			&:nth-child(4){
-				background-color: lightgrey;
+				background-color: @background-color;
 			}
 
 			li {
+
 				&:first-child{
 					width: 25%;
 				}
@@ -236,8 +238,47 @@ header {
 			}
 		}
 	}
+}
 
+.contact-form {
+	padding: 2%;
 
+	h1 {
+		font-size: 1.5rem;
+		border-bottom: 2px dashed black;
+		padding: 1%;
+		margin-bottom: 2%;
+	}
+	form {
+		.flexbox();
+		flex-direction: column;
+		justify-content: space-evenly;
+
+		div {
+			padding: 2%;
+
+			label {
+				display: inline-block;
+				width: 20%;
+				vertical-align: top;
+			}
+
+			input, 
+			textarea {
+				display: inline-block;
+				width: 40%;
+			}
+		}
+	}
+}
+
+footer {
+	background-color: @background-color;
+
+	p {
+		text-align: center;
+		padding: 5%;
+	}
 }
 
 

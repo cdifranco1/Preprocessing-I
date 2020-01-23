@@ -165,7 +165,7 @@ header nav a:hover {
 .top-section {
   display: flex;
   flex-direction: column;
-  background-color: #F5F5F5;
+  background-color: #DCDCDC;
   padding: 3%;
   margin-top: 2%;
 }
@@ -252,7 +252,7 @@ header nav a:hover {
 }
 .bottom-section .work-history ul:nth-child(2),
 .bottom-section .work-history ul:nth-child(4) {
-  background-color: lightgrey;
+  background-color: #DCDCDC;
 }
 .bottom-section .work-history ul li:first-child {
   width: 25%;
@@ -265,4 +265,38 @@ header nav a:hover {
 }
 .bottom-section .work-history ul li:nth-child(4) {
   width: 25%;
+}
+.contact-form {
+  padding: 2%;
+}
+.contact-form h1 {
+  font-size: 1.5rem;
+  border-bottom: 2px dashed black;
+  padding: 1%;
+  margin-bottom: 2%;
+}
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.contact-form form div {
+  padding: 2%;
+}
+.contact-form form div label {
+  display: inline-block;
+  width: 20%;
+  vertical-align: top;
+}
+.contact-form form div input,
+.contact-form form div textarea {
+  display: inline-block;
+  width: 40%;
+}
+footer {
+  background-color: #DCDCDC;
+}
+footer p {
+  text-align: center;
+  padding: 5%;
 }
